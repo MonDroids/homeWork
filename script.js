@@ -174,4 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Апп эхлүүлэхэд өгөгдөл унших
     loadSettings();
+    const fbShareBtn = document.getElementById('fb-share-btn');
+
+// Та өөрийнхөө аппын хаягийг энд бичнэ
+const shareUrl = 'https://github.com/MonDroids/homeWork.git'; // Эсвэл GitHub Pages линк гэх мэт
+
+const shareText = encodeURIComponent("Check out this free Pomodoro Timer! 🔔 Stay focused and boost your productivity 💪");
+
+fbShareBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${shareText}`;
+
 });
