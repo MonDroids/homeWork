@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+
+        <!-- Тохиргоо хэсэг -->
+        <div class="settings">
+            <h2>Тохиргоо</h2>
+            <label>
+                Ажиллах хугацаа (минут):
+                <input type="number" id="work-duration-input" min="1" value="25"/>
+            </label>
+            <label>
+                Амрах хугацаа (минут):
+                <input type="number" id="break-duration-input" min="1" value="5"/>
+            </label>
+            <button id="save-settings-btn">Хадгалах</button>
+        </div>
+
+        <!-- Таймер харуулах хэсэг -->
+        <div class="timer">
+            <div id="timer-label">Ажиллах цаг</div>
+            <div id="time-display">25:00</div>
+            <div class="controls">
+                <button id="start-btn">Эхлэх</button>
+                <button id="pause-btn" disabled>Зогсоох</button>
+                <button id="reset-btn">Дахин тохируулах</button>
+            </div>
+        </div>
+
+        <!-- Өгөгдөл харуулах хэсэг -->
+        <div class="stats">
+            <h2>Өгөгдөл</h2>
+            <p>Хийгдсэн ажлын сессийн тоо: <span id="sessions-completed">0</span></p>
+        </div>
+
+        <!-- Buy Me a Coffee холбоос -->
+        <div class="donate">
+            <a href="https://buymeacoffee.com/sainaadotnett" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me a Coffee" class="bmc-logo" />
+                <span>Кофегоор дэмжих :)</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
